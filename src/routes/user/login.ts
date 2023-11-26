@@ -3,7 +3,7 @@ import { StatusCodes } from 'http-status-codes';
 const router = express.Router();
 
 router.get('/', async (req: Request, res: Response) => {
-  res.json({ statusCode: StatusCodes.OK });
+  res.json({ statusCode: StatusCodes.OK, token: 'xx' });
 });
 
-export default router;
+module.exports = router;
